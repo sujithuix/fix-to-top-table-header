@@ -1,0 +1,22 @@
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 110px;
+background: red;
+}
+.table-container{
+margin-top: 160px;
+}
+
+table .header-fixed {
+  position: fixed;
+  top: 110px; /* This will be the offset top value */
+  z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+}
+
+
+table .header-fixed th,table .header-fixed td{
+box-sizing: content-box !important;
+}
